@@ -9,6 +9,8 @@ sh=pickle.load(open('smoke.save','rb'))
 
 def main():
     st.title('DIABETES PREDICTION')
+    img=Image.open(r"C:\Users\User\Downloads\download (44).jpg")
+    st.image(img)
     
     gender=st.selectbox('gender',['Female', 'Male'])
     age=st.text_input('AGE','type here')
@@ -47,7 +49,7 @@ def main():
         if m==0:
             st.success('sugar illa mone')
         else:
-            st.error('sugar ind')
+            st.error('sugar ind mone')
  
         
 
